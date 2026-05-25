@@ -2370,6 +2370,9 @@ img {
 					<a href="_scheduler_services_eventservice_d_.eventservice.html#findresourcedata" class="tsd-kind-icon">find<wbr>Resource<wbr>Data</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a href="_scheduler_services_eventservice_d_.eventservice.html#getabsolutecolumnindex" class="tsd-kind-icon">get<wbr>Absolute<wbr>Column<wbr>Index</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
 					<a href="_scheduler_services_eventservice_d_.eventservice.html#getdefaultresourcecolor" class="tsd-kind-icon">get<wbr>Default<wbr>Resource<wbr>Color</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
@@ -2444,8 +2447,14 @@ img {
 				<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
 					<a href="_scheduler_services_eventservice_d_.eventservice.html#mapeventdata" class="tsd-kind-icon">map<wbr>Event<wbr>Data</a>
 				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a href="_scheduler_services_eventservice_d_.eventservice.html#matchesresource" class="tsd-kind-icon">matches<wbr>Resource</a>
+				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
 					<a href="_scheduler_services_eventservice_d_.eventservice.html#prioritizeevents" class="tsd-kind-icon">prioritize<wbr>Events</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a href="_scheduler_services_eventservice_d_.eventservice.html#processagendaevents" class="tsd-kind-icon">process<wbr>Agenda<wbr>Events</a>
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
 					<a href="_scheduler_services_eventservice_d_.eventservice.html#processcloneevent" class="tsd-kind-icon">process<wbr>Clone<wbr>Event</a>
@@ -2506,6 +2515,7 @@ img {
 						<h3>Properties</h3>
 						<ul class="tsd-index-list">
 							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="_scheduler_services_eventservice_d_.eventservice.html#findresourcedata" class="tsd-kind-icon">find<wbr>Resource<wbr>Data</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="_scheduler_services_eventservice_d_.eventservice.html#getabsolutecolumnindex" class="tsd-kind-icon">get<wbr>Absolute<wbr>Column<wbr>Index</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="_scheduler_services_eventservice_d_.eventservice.html#getdefaultresourcecolor" class="tsd-kind-icon">get<wbr>Default<wbr>Resource<wbr>Color</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="_scheduler_services_eventservice_d_.eventservice.html#geteventidtype" class="tsd-kind-icon">get<wbr>EventIDType</a></li>
 						</ul>
@@ -2536,7 +2546,9 @@ img {
 							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_scheduler_services_eventservice_d_.eventservice.html#isblockrange" class="tsd-kind-icon">is<wbr>Block<wbr>Range</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_scheduler_services_eventservice_d_.eventservice.html#ismultidayevent" class="tsd-kind-icon">is<wbr>Multi<wbr>Day<wbr>Event</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_scheduler_services_eventservice_d_.eventservice.html#mapeventdata" class="tsd-kind-icon">map<wbr>Event<wbr>Data</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="_scheduler_services_eventservice_d_.eventservice.html#matchesresource" class="tsd-kind-icon">matches<wbr>Resource</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_scheduler_services_eventservice_d_.eventservice.html#prioritizeevents" class="tsd-kind-icon">prioritize<wbr>Events</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_scheduler_services_eventservice_d_.eventservice.html#processagendaevents" class="tsd-kind-icon">process<wbr>Agenda<wbr>Events</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_scheduler_services_eventservice_d_.eventservice.html#processcloneevent" class="tsd-kind-icon">process<wbr>Clone<wbr>Event</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_scheduler_services_eventservice_d_.eventservice.html#processdayevents" class="tsd-kind-icon">process<wbr>Day<wbr>Events</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_scheduler_services_eventservice_d_.eventservice.html#processtimeslotcloneevent" class="tsd-kind-icon">process<wbr>Time<wbr>Slot<wbr>Clone<wbr>Event</a></li>
@@ -2558,7 +2570,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">find<wbr>Resource<wbr>Data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/services/EventService.d.ts:208</li>
+						<li>Defined in src/scheduler/services/EventService.d.ts:219</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2579,12 +2591,22 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+				<a name="getabsolutecolumnindex" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> get<wbr>Absolute<wbr>Column<wbr>Index</h3>
+				<div class="tsd-signature tsd-kind-icon">get<wbr>Absolute<wbr>Column<wbr>Index<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in src/scheduler/services/EventService.d.ts:178</li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
 				<a name="getdefaultresourcecolor" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> get<wbr>Default<wbr>Resource<wbr>Color</h3>
 				<div class="tsd-signature tsd-kind-icon">get<wbr>Default<wbr>Resource<wbr>Color<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/services/EventService.d.ts:215</li>
+						<li>Defined in src/scheduler/services/EventService.d.ts:226</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2607,7 +2629,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">get<wbr>EventIDType<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/services/EventService.d.ts:140</li>
+						<li>Defined in src/scheduler/services/EventService.d.ts:150</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2637,7 +2659,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/EventService.d.ts:43</li>
+								<li>Defined in src/scheduler/services/EventService.d.ts:44</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2660,7 +2682,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/EventService.d.ts:88</li>
+								<li>Defined in src/scheduler/services/EventService.d.ts:89</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2692,13 +2714,13 @@ img {
 				<a name="cloneeventposition" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagStatic">Static</span> clone<wbr>Event<wbr>Position</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-					<li class="tsd-signature tsd-kind-icon">clone<wbr>Event<wbr>Position<span class="tsd-signature-symbol">(</span>schedulerRef<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLDivElement</span>, eventInfo<span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_internal_interface_d_.processedeventsdata.html" class="tsd-signature-type">ProcessedEventsData</a>, cellWidth<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, isAllDaySource<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, isRtl<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, isMonthView<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, currentCell<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">HTMLElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">CSSProperties</span></li>
+					<li class="tsd-signature tsd-kind-icon">clone<wbr>Event<wbr>Position<span class="tsd-signature-symbol">(</span>schedulerRef<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLDivElement</span>, eventInfo<span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_internal_interface_d_.processedeventsdata.html" class="tsd-signature-type">ProcessedEventsData</a>, cellWidth<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, isAllDaySource<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, isRtl<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, isMonthView<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, currentCell<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">HTMLElement</span>, groupingConfig<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_scheduler_services_resourcegroupingservice_d_.resourcegroupingmetadata.html" class="tsd-signature-type">ResourceGroupingMetadata</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">CSSProperties</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/EventService.d.ts:180</li>
+								<li>Defined in src/scheduler/services/EventService.d.ts:191</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2750,6 +2772,9 @@ img {
 									<p>Contains current target.</p>
 								</div>
 							</li>
+							<li>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> groupingConfig: <a href="../interfaces/_scheduler_services_resourcegroupingservice_d_.resourcegroupingmetadata.html" class="tsd-signature-type">ResourceGroupingMetadata</a></h5>
+							</li>
 						</ul>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">CSSProperties</span></h4>
 						<p>Inline style object containing top, left, and width (in pixels).</p>
@@ -2766,7 +2791,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/EventService.d.ts:45</li>
+								<li>Defined in src/scheduler/services/EventService.d.ts:46</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2789,7 +2814,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/EventService.d.ts:80</li>
+								<li>Defined in src/scheduler/services/EventService.d.ts:81</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2827,7 +2852,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/EventService.d.ts:166</li>
+								<li>Defined in src/scheduler/services/EventService.d.ts:176</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2867,7 +2892,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/EventService.d.ts:16</li>
+								<li>Defined in src/scheduler/services/EventService.d.ts:17</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2907,7 +2932,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/EventService.d.ts:72</li>
+								<li>Defined in src/scheduler/services/EventService.d.ts:73</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2948,7 +2973,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/EventService.d.ts:27</li>
+								<li>Defined in src/scheduler/services/EventService.d.ts:28</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3004,7 +3029,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/EventService.d.ts:133</li>
+								<li>Defined in src/scheduler/services/EventService.d.ts:143</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3027,7 +3052,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/EventService.d.ts:127</li>
+								<li>Defined in src/scheduler/services/EventService.d.ts:137</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3059,7 +3084,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/EventService.d.ts:191</li>
+								<li>Defined in src/scheduler/services/EventService.d.ts:202</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3097,7 +3122,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/EventService.d.ts:149</li>
+								<li>Defined in src/scheduler/services/EventService.d.ts:159</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3120,7 +3145,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/EventService.d.ts:148</li>
+								<li>Defined in src/scheduler/services/EventService.d.ts:158</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3152,7 +3177,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/EventService.d.ts:150</li>
+								<li>Defined in src/scheduler/services/EventService.d.ts:160</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3178,7 +3203,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/EventService.d.ts:158</li>
+								<li>Defined in src/scheduler/services/EventService.d.ts:168</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3213,7 +3238,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/EventService.d.ts:200</li>
+								<li>Defined in src/scheduler/services/EventService.d.ts:211</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3252,7 +3277,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/EventService.d.ts:62</li>
+								<li>Defined in src/scheduler/services/EventService.d.ts:63</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3293,7 +3318,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/EventService.d.ts:44</li>
+								<li>Defined in src/scheduler/services/EventService.d.ts:45</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3316,7 +3341,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/EventService.d.ts:113</li>
+								<li>Defined in src/scheduler/services/EventService.d.ts:123</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3360,7 +3385,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/EventService.d.ts:96</li>
+								<li>Defined in src/scheduler/services/EventService.d.ts:97</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3398,7 +3423,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/EventService.d.ts:120</li>
+								<li>Defined in src/scheduler/services/EventService.d.ts:130</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3430,7 +3455,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/EventService.d.ts:35</li>
+								<li>Defined in src/scheduler/services/EventService.d.ts:36</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3455,6 +3480,59 @@ img {
 					</li>
 				</ul>
 			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+				<a name="matchesresource" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> matches<wbr>Resource</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<li class="tsd-signature tsd-kind-icon">matches<wbr>Resource<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.eventmodel.html" class="tsd-signature-type">EventModel</a>, resourceLeaf<span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_internal_interface_d_.tddata.html" class="tsd-signature-type">TdData</a>, resources<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.schedulerresource.html" class="tsd-signature-type">SchedulerResource</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in src/scheduler/services/EventService.d.ts:256</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Checks if an event matches a specific resource leaf (for resource grouping).
+								Validates that the event&#39;s resource field values align with the leaf resource&#39;s groupOrder chain.</p>
+							</div>
+							<dl class="tsd-comment-tags">
+								<dt>example</dt>
+								<dd><pre><code class="language-typescript"><span class="hljs-comment">// For event { OwnerId: 1, RoomId: 2 }</span>
+<span class="hljs-comment">// and resourceLeaf with groupOrder: ['1', '2'] (Owner=1 → Room=2)</span>
+<span class="hljs-comment">// returns true if both OwnerId and RoomId values match the groupOrder</span>
+<span class="hljs-keyword">const</span> matches = EventService.matchesResource(event, leaf, resources);</code></pre>
+								</dd>
+							</dl>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>event: <a href="../interfaces/_scheduler_types_scheduler_types_d_.eventmodel.html" class="tsd-signature-type">EventModel</a></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>The event to check</p>
+								</div>
+							</li>
+							<li>
+								<h5>resourceLeaf: <a href="../interfaces/_scheduler_types_internal_interface_d_.tddata.html" class="tsd-signature-type">TdData</a></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>The leaf-level resource object with groupOrder and resourceData properties</p>
+								</div>
+							</li>
+							<li>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> resources: <a href="../interfaces/_scheduler_types_scheduler_types_d_.schedulerresource.html" class="tsd-signature-type">SchedulerResource</a><span class="tsd-signature-symbol">[]</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>Array of resource configurations (defines field mappings)</p>
+								</div>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						<p>True if event belongs to this resource leaf</p>
+					</li>
+				</ul>
+			</section>
 			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
 				<a name="prioritizeevents" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagStatic">Static</span> prioritize<wbr>Events</h3>
@@ -3465,7 +3543,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/EventService.d.ts:52</li>
+								<li>Defined in src/scheduler/services/EventService.d.ts:53</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3488,16 +3566,55 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
-				<a name="processcloneevent" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagStatic">Static</span> process<wbr>Clone<wbr>Event</h3>
+				<a name="processagendaevents" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> process<wbr>Agenda<wbr>Events</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-					<li class="tsd-signature tsd-kind-icon">process<wbr>Clone<wbr>Event<span class="tsd-signature-symbol">(</span>schedulerRef<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLDivElement</span>, renderDates<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">[]</span>, event<span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.eventmodel.html" class="tsd-signature-type">EventModel</a>, showWeekend<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, workDays<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span>, cellWidth<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, isAllDaySource<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, isRtl<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, isMonthView<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, currentCell<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">HTMLElement</span>, resources<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.schedulerresource.html" class="tsd-signature-type">SchedulerResource</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_internal_interface_d_.processedeventsdata.html" class="tsd-signature-type">ProcessedEventsData</a><span class="tsd-signature-symbol">[]</span></li>
+					<li class="tsd-signature tsd-kind-icon">process<wbr>Agenda<wbr>Events<span class="tsd-signature-symbol">(</span>events<span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.eventmodel.html" class="tsd-signature-type">EventModel</a><span class="tsd-signature-symbol">[]</span>, dates<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/_scheduler_types_internal_interface_d_.processedeventsdata.html" class="tsd-signature-type">ProcessedEventsData</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/EventService.d.ts:182</li>
+								<li>Defined in src/scheduler/services/EventService.d.ts:114</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Processes events specifically for Agenda View to calculate segments.
+								Matches EJ2 AgendaBase.processAgendaEvents logic.</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>events: <a href="../interfaces/_scheduler_types_scheduler_types_d_.eventmodel.html" class="tsd-signature-type">EventModel</a><span class="tsd-signature-symbol">[]</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>Events to process</p>
+								</div>
+							</li>
+							<li>
+								<h5>dates: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">[]</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>Current view dates</p>
+								</div>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/_scheduler_types_internal_interface_d_.processedeventsdata.html" class="tsd-signature-type">ProcessedEventsData</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						<p>Processed events grouped by date key</p>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+				<a name="processcloneevent" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagStatic">Static</span> process<wbr>Clone<wbr>Event</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<li class="tsd-signature tsd-kind-icon">process<wbr>Clone<wbr>Event<span class="tsd-signature-symbol">(</span>schedulerRef<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLDivElement</span>, renderDates<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">[]</span>, event<span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.eventmodel.html" class="tsd-signature-type">EventModel</a>, showWeekend<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, workDays<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span>, cellWidth<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, isAllDaySource<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, isRtl<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, isMonthView<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, currentCell<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">HTMLElement</span>, resources<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.schedulerresource.html" class="tsd-signature-type">SchedulerResource</a><span class="tsd-signature-symbol">[]</span>, groupIndex<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, groupingConfig<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_scheduler_services_resourcegroupingservice_d_.resourcegroupingmetadata.html" class="tsd-signature-type">ResourceGroupingMetadata</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_internal_interface_d_.processedeventsdata.html" class="tsd-signature-type">ProcessedEventsData</a><span class="tsd-signature-symbol">[]</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in src/scheduler/services/EventService.d.ts:193</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3535,6 +3652,12 @@ img {
 							<li>
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> resources: <a href="../interfaces/_scheduler_types_scheduler_types_d_.schedulerresource.html" class="tsd-signature-type">SchedulerResource</a><span class="tsd-signature-symbol">[]</span></h5>
 							</li>
+							<li>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> groupIndex: <span class="tsd-signature-type">number</span></h5>
+							</li>
+							<li>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> groupingConfig: <a href="../interfaces/_scheduler_services_resourcegroupingservice_d_.resourcegroupingmetadata.html" class="tsd-signature-type">ResourceGroupingMetadata</a></h5>
+							</li>
 						</ul>
 						<h4 class="tsd-returns-title">Returns <a href="../interfaces/_scheduler_types_internal_interface_d_.processedeventsdata.html" class="tsd-signature-type">ProcessedEventsData</a><span class="tsd-signature-symbol">[]</span></h4>
 					</li>
@@ -3550,7 +3673,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/EventService.d.ts:167</li>
+								<li>Defined in src/scheduler/services/EventService.d.ts:177</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3573,13 +3696,13 @@ img {
 				<a name="processtimeslotcloneevent" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagStatic">Static</span> process<wbr>Time<wbr>Slot<wbr>Clone<wbr>Event</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-					<li class="tsd-signature tsd-kind-icon">process<wbr>Time<wbr>Slot<wbr>Clone<wbr>Event<span class="tsd-signature-symbol">(</span>schedulerRef<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLDivElement</span>, renderDates<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">[]</span>, event<span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.eventmodel.html" class="tsd-signature-type">EventModel</a>, timeScale<span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.timescaleprops.html" class="tsd-signature-type">TimeScaleProps</a>, startHour<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, endHour<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, cellWidth<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, isRtl<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span>, cellHeight<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, resources<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.schedulerresource.html" class="tsd-signature-type">SchedulerResource</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_internal_interface_d_.processedeventsdata.html" class="tsd-signature-type">ProcessedEventsData</a><span class="tsd-signature-symbol">[]</span></li>
+					<li class="tsd-signature tsd-kind-icon">process<wbr>Time<wbr>Slot<wbr>Clone<wbr>Event<span class="tsd-signature-symbol">(</span>schedulerRef<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLDivElement</span>, renderDates<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">[]</span>, event<span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.eventmodel.html" class="tsd-signature-type">EventModel</a>, timeScale<span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.timescaleprops.html" class="tsd-signature-type">TimeScaleProps</a>, startHour<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, endHour<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, cellWidth<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, isRtl<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span>, cellHeight<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, resources<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.schedulerresource.html" class="tsd-signature-type">SchedulerResource</a><span class="tsd-signature-symbol">[]</span>, groupIndex<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, groupingConfig<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_scheduler_services_resourcegroupingservice_d_.resourcegroupingmetadata.html" class="tsd-signature-type">ResourceGroupingMetadata</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_internal_interface_d_.processedeventsdata.html" class="tsd-signature-type">ProcessedEventsData</a><span class="tsd-signature-symbol">[]</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/EventService.d.ts:183</li>
+								<li>Defined in src/scheduler/services/EventService.d.ts:194</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3614,6 +3737,12 @@ img {
 							<li>
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> resources: <a href="../interfaces/_scheduler_types_scheduler_types_d_.schedulerresource.html" class="tsd-signature-type">SchedulerResource</a><span class="tsd-signature-symbol">[]</span></h5>
 							</li>
+							<li>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> groupIndex: <span class="tsd-signature-type">number</span></h5>
+							</li>
+							<li>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> groupingConfig: <a href="../interfaces/_scheduler_services_resourcegroupingservice_d_.resourcegroupingmetadata.html" class="tsd-signature-type">ResourceGroupingMetadata</a></h5>
+							</li>
 						</ul>
 						<h4 class="tsd-returns-title">Returns <a href="../interfaces/_scheduler_types_internal_interface_d_.processedeventsdata.html" class="tsd-signature-type">ProcessedEventsData</a><span class="tsd-signature-symbol">[]</span></h4>
 					</li>
@@ -3629,7 +3758,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/EventService.d.ts:53</li>
+								<li>Defined in src/scheduler/services/EventService.d.ts:54</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3652,7 +3781,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/EventService.d.ts:42</li>
+								<li>Defined in src/scheduler/services/EventService.d.ts:43</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3684,7 +3813,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/EventService.d.ts:104</li>
+								<li>Defined in src/scheduler/services/EventService.d.ts:105</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3722,7 +3851,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/EventService.d.ts:181</li>
+								<li>Defined in src/scheduler/services/EventService.d.ts:192</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3748,7 +3877,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/EventService.d.ts:225</li>
+								<li>Defined in src/scheduler/services/EventService.d.ts:236</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">

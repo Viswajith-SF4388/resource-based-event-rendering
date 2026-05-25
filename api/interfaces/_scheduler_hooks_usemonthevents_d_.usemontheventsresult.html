@@ -2446,7 +2446,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">calculated<wbr>Row<wbr>Height<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/hooks/useMonthEvents.d.ts:37</li>
+						<li>Defined in src/scheduler/hooks/useMonthEvents.d.ts:38</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2458,15 +2458,15 @@ img {
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 				<a name="getalleventsfordate" class="tsd-anchor"></a>
 				<h3>get<wbr>All<wbr>Events<wbr>For<wbr>Date</h3>
-				<div class="tsd-signature tsd-kind-icon">get<wbr>All<wbr>Events<wbr>For<wbr>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>dateKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="_scheduler_types_internal_interface_d_.processedeventsdata.html" class="tsd-signature-type">ProcessedEventsData</a><span class="tsd-signature-symbol">[]</span></div>
+				<div class="tsd-signature tsd-kind-icon">get<wbr>All<wbr>Events<wbr>For<wbr>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>dateKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, resourceLeaf<span class="tsd-signature-symbol">?: </span><a href="_scheduler_services_resourcegroupingservice_d_.resourcelevel.html" class="tsd-signature-type">ResourceLevel</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="_scheduler_types_internal_interface_d_.processedeventsdata.html" class="tsd-signature-type">ProcessedEventsData</a><span class="tsd-signature-symbol">[]</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/hooks/useMonthEvents.d.ts:21</li>
+						<li>Defined in src/scheduler/hooks/useMonthEvents.d.ts:22</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Get all events for a specific date (visible and hidden)</p>
+						<p>Get all events for a specific date (visible and hidden), optionally filtered by resource</p>
 					</div>
 				</div>
 				<div class="tsd-type-declaration">
@@ -2474,7 +2474,7 @@ img {
 					<ul class="tsd-parameters">
 						<li class="tsd-parameter-siganture">
 							<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
-								<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>dateKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_scheduler_types_internal_interface_d_.processedeventsdata.html" class="tsd-signature-type">ProcessedEventsData</a><span class="tsd-signature-symbol">[]</span></li>
+								<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>dateKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, resourceLeaf<span class="tsd-signature-symbol">?: </span><a href="_scheduler_services_resourcegroupingservice_d_.resourcelevel.html" class="tsd-signature-type">ResourceLevel</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_scheduler_types_internal_interface_d_.processedeventsdata.html" class="tsd-signature-type">ProcessedEventsData</a><span class="tsd-signature-symbol">[]</span></li>
 							</ul>
 							<ul class="tsd-descriptions">
 								<li class="tsd-description">
@@ -2482,6 +2482,9 @@ img {
 									<ul class="tsd-parameters">
 										<li>
 											<h5>dateKey: <span class="tsd-signature-type">string</span></h5>
+										</li>
+										<li>
+											<h5><span class="tsd-flag ts-flagOptional">Optional</span> resourceLeaf: <a href="_scheduler_services_resourcegroupingservice_d_.resourcelevel.html" class="tsd-signature-type">ResourceLevel</a></h5>
 										</li>
 									</ul>
 									<h4 class="tsd-returns-title">Returns <a href="_scheduler_types_internal_interface_d_.processedeventsdata.html" class="tsd-signature-type">ProcessedEventsData</a><span class="tsd-signature-symbol">[]</span></h4>
@@ -2494,10 +2497,10 @@ img {
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 				<a name="getalldayblockevent" class="tsd-anchor"></a>
 				<h3>get<wbr>Allday<wbr>Block<wbr>Event</h3>
-				<div class="tsd-signature tsd-kind-icon">get<wbr>Allday<wbr>Block<wbr>Event<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>dateKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="_scheduler_types_internal_interface_d_.processedeventsdata.html" class="tsd-signature-type">ProcessedEventsData</a></div>
+				<div class="tsd-signature tsd-kind-icon">get<wbr>Allday<wbr>Block<wbr>Event<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>dateKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, resourceLeaf<span class="tsd-signature-symbol">?: </span><a href="_scheduler_services_resourcegroupingservice_d_.resourcelevel.html" class="tsd-signature-type">ResourceLevel</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="_scheduler_types_internal_interface_d_.processedeventsdata.html" class="tsd-signature-type">ProcessedEventsData</a></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/hooks/useMonthEvents.d.ts:13</li>
+						<li>Defined in src/scheduler/hooks/useMonthEvents.d.ts:14</li>
 					</ul>
 				</aside>
 				<div class="tsd-type-declaration">
@@ -2505,7 +2508,7 @@ img {
 					<ul class="tsd-parameters">
 						<li class="tsd-parameter-siganture">
 							<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
-								<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>dateKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_scheduler_types_internal_interface_d_.processedeventsdata.html" class="tsd-signature-type">ProcessedEventsData</a></li>
+								<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>dateKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, resourceLeaf<span class="tsd-signature-symbol">?: </span><a href="_scheduler_services_resourcegroupingservice_d_.resourcelevel.html" class="tsd-signature-type">ResourceLevel</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_scheduler_types_internal_interface_d_.processedeventsdata.html" class="tsd-signature-type">ProcessedEventsData</a></li>
 							</ul>
 							<ul class="tsd-descriptions">
 								<li class="tsd-description">
@@ -2513,6 +2516,9 @@ img {
 									<ul class="tsd-parameters">
 										<li>
 											<h5>dateKey: <span class="tsd-signature-type">string</span></h5>
+										</li>
+										<li>
+											<h5><span class="tsd-flag ts-flagOptional">Optional</span> resourceLeaf: <a href="_scheduler_services_resourcegroupingservice_d_.resourcelevel.html" class="tsd-signature-type">ResourceLevel</a></h5>
 										</li>
 									</ul>
 									<h4 class="tsd-returns-title">Returns <a href="_scheduler_types_internal_interface_d_.processedeventsdata.html" class="tsd-signature-type">ProcessedEventsData</a></h4>
@@ -2525,15 +2531,15 @@ img {
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 				<a name="gethiddeneventcount" class="tsd-anchor"></a>
 				<h3>get<wbr>Hidden<wbr>Event<wbr>Count</h3>
-				<div class="tsd-signature tsd-kind-icon">get<wbr>Hidden<wbr>Event<wbr>Count<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>dateKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">number</span></div>
+				<div class="tsd-signature tsd-kind-icon">get<wbr>Hidden<wbr>Event<wbr>Count<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>dateKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, resourceLeaf<span class="tsd-signature-symbol">?: </span><a href="_scheduler_services_resourcegroupingservice_d_.resourcelevel.html" class="tsd-signature-type">ResourceLevel</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">number</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/hooks/useMonthEvents.d.ts:17</li>
+						<li>Defined in src/scheduler/hooks/useMonthEvents.d.ts:18</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Get hidden event count for a specific date</p>
+						<p>Get hidden event count for a specific date, optionally filtered by resource</p>
 					</div>
 				</div>
 				<div class="tsd-type-declaration">
@@ -2541,7 +2547,7 @@ img {
 					<ul class="tsd-parameters">
 						<li class="tsd-parameter-siganture">
 							<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
-								<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>dateKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+								<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>dateKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, resourceLeaf<span class="tsd-signature-symbol">?: </span><a href="_scheduler_services_resourcegroupingservice_d_.resourcelevel.html" class="tsd-signature-type">ResourceLevel</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 							</ul>
 							<ul class="tsd-descriptions">
 								<li class="tsd-description">
@@ -2549,6 +2555,9 @@ img {
 									<ul class="tsd-parameters">
 										<li>
 											<h5>dateKey: <span class="tsd-signature-type">string</span></h5>
+										</li>
+										<li>
+											<h5><span class="tsd-flag ts-flagOptional">Optional</span> resourceLeaf: <a href="_scheduler_services_resourcegroupingservice_d_.resourcelevel.html" class="tsd-signature-type">ResourceLevel</a></h5>
 										</li>
 									</ul>
 									<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -2561,15 +2570,15 @@ img {
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 				<a name="getvisibleevents" class="tsd-anchor"></a>
 				<h3>get<wbr>Visible<wbr>Events</h3>
-				<div class="tsd-signature tsd-kind-icon">get<wbr>Visible<wbr>Events<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>dateKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="_scheduler_types_internal_interface_d_.processedeventsdata.html" class="tsd-signature-type">ProcessedEventsData</a><span class="tsd-signature-symbol">[]</span></div>
+				<div class="tsd-signature tsd-kind-icon">get<wbr>Visible<wbr>Events<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>dateKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, resourceLeaf<span class="tsd-signature-symbol">?: </span><a href="_scheduler_services_resourcegroupingservice_d_.resourcelevel.html" class="tsd-signature-type">ResourceLevel</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="_scheduler_types_internal_interface_d_.processedeventsdata.html" class="tsd-signature-type">ProcessedEventsData</a><span class="tsd-signature-symbol">[]</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/hooks/useMonthEvents.d.ts:12</li>
+						<li>Defined in src/scheduler/hooks/useMonthEvents.d.ts:13</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Get visible events for a specific date</p>
+						<p>Get visible events for a specific date, optionally filtered by resource</p>
 					</div>
 				</div>
 				<div class="tsd-type-declaration">
@@ -2577,7 +2586,7 @@ img {
 					<ul class="tsd-parameters">
 						<li class="tsd-parameter-siganture">
 							<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
-								<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>dateKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_scheduler_types_internal_interface_d_.processedeventsdata.html" class="tsd-signature-type">ProcessedEventsData</a><span class="tsd-signature-symbol">[]</span></li>
+								<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>dateKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, resourceLeaf<span class="tsd-signature-symbol">?: </span><a href="_scheduler_services_resourcegroupingservice_d_.resourcelevel.html" class="tsd-signature-type">ResourceLevel</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_scheduler_types_internal_interface_d_.processedeventsdata.html" class="tsd-signature-type">ProcessedEventsData</a><span class="tsd-signature-symbol">[]</span></li>
 							</ul>
 							<ul class="tsd-descriptions">
 								<li class="tsd-description">
@@ -2585,6 +2594,9 @@ img {
 									<ul class="tsd-parameters">
 										<li>
 											<h5>dateKey: <span class="tsd-signature-type">string</span></h5>
+										</li>
+										<li>
+											<h5><span class="tsd-flag ts-flagOptional">Optional</span> resourceLeaf: <a href="_scheduler_services_resourcegroupingservice_d_.resourcelevel.html" class="tsd-signature-type">ResourceLevel</a></h5>
 										</li>
 									</ul>
 									<h4 class="tsd-returns-title">Returns <a href="_scheduler_types_internal_interface_d_.processedeventsdata.html" class="tsd-signature-type">ProcessedEventsData</a><span class="tsd-signature-symbol">[]</span></h4>
@@ -2597,15 +2609,15 @@ img {
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 				<a name="hasalldayblock" class="tsd-anchor"></a>
 				<h3>has<wbr>All<wbr>Day<wbr>Block</h3>
-				<div class="tsd-signature tsd-kind-icon">has<wbr>All<wbr>Day<wbr>Block<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>dateKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span></div>
+				<div class="tsd-signature tsd-kind-icon">has<wbr>All<wbr>Day<wbr>Block<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>dateKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, resourceLeaf<span class="tsd-signature-symbol">?: </span><a href="_scheduler_services_resourcegroupingservice_d_.resourcelevel.html" class="tsd-signature-type">ResourceLevel</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/hooks/useMonthEvents.d.ts:33</li>
+						<li>Defined in src/scheduler/hooks/useMonthEvents.d.ts:34</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Check if a date has an all-day block event (isBlock: true, isAllDay: true)</p>
+						<p>Check if a date has an all-day block event (isBlock: true, isAllDay: true), optionally filtered by resource</p>
 					</div>
 				</div>
 				<div class="tsd-type-declaration">
@@ -2613,7 +2625,7 @@ img {
 					<ul class="tsd-parameters">
 						<li class="tsd-parameter-siganture">
 							<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
-								<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>dateKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+								<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>dateKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, resourceLeaf<span class="tsd-signature-symbol">?: </span><a href="_scheduler_services_resourcegroupingservice_d_.resourcelevel.html" class="tsd-signature-type">ResourceLevel</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 							</ul>
 							<ul class="tsd-descriptions">
 								<li class="tsd-description">
@@ -2621,6 +2633,9 @@ img {
 									<ul class="tsd-parameters">
 										<li>
 											<h5>dateKey: <span class="tsd-signature-type">string</span></h5>
+										</li>
+										<li>
+											<h5><span class="tsd-flag ts-flagOptional">Optional</span> resourceLeaf: <a href="_scheduler_services_resourcegroupingservice_d_.resourcelevel.html" class="tsd-signature-type">ResourceLevel</a></h5>
 										</li>
 									</ul>
 									<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -2633,15 +2648,15 @@ img {
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 				<a name="hasblockindicator" class="tsd-anchor"></a>
 				<h3>has<wbr>Block<wbr>Indicator</h3>
-				<div class="tsd-signature tsd-kind-icon">has<wbr>Block<wbr>Indicator<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>dateKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span></div>
+				<div class="tsd-signature tsd-kind-icon">has<wbr>Block<wbr>Indicator<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>dateKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, resourceLeaf<span class="tsd-signature-symbol">?: </span><a href="_scheduler_services_resourcegroupingservice_d_.resourcelevel.html" class="tsd-signature-type">ResourceLevel</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/hooks/useMonthEvents.d.ts:29</li>
+						<li>Defined in src/scheduler/hooks/useMonthEvents.d.ts:30</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Check if a date has a block indicator (isBlock: true, isAllDay: false)</p>
+						<p>Check if a date has a block indicator (isBlock: true, isAllDay: false), optionally filtered by resource</p>
 					</div>
 				</div>
 				<div class="tsd-type-declaration">
@@ -2649,7 +2664,7 @@ img {
 					<ul class="tsd-parameters">
 						<li class="tsd-parameter-siganture">
 							<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
-								<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>dateKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+								<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>dateKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, resourceLeaf<span class="tsd-signature-symbol">?: </span><a href="_scheduler_services_resourcegroupingservice_d_.resourcelevel.html" class="tsd-signature-type">ResourceLevel</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 							</ul>
 							<ul class="tsd-descriptions">
 								<li class="tsd-description">
@@ -2657,6 +2672,9 @@ img {
 									<ul class="tsd-parameters">
 										<li>
 											<h5>dateKey: <span class="tsd-signature-type">string</span></h5>
+										</li>
+										<li>
+											<h5><span class="tsd-flag ts-flagOptional">Optional</span> resourceLeaf: <a href="_scheduler_services_resourcegroupingservice_d_.resourcelevel.html" class="tsd-signature-type">ResourceLevel</a></h5>
 										</li>
 									</ul>
 									<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -2669,15 +2687,15 @@ img {
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 				<a name="hasmoreindicator" class="tsd-anchor"></a>
 				<h3>has<wbr>More<wbr>Indicator</h3>
-				<div class="tsd-signature tsd-kind-icon">has<wbr>More<wbr>Indicator<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>dateKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span></div>
+				<div class="tsd-signature tsd-kind-icon">has<wbr>More<wbr>Indicator<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>dateKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, resourceLeaf<span class="tsd-signature-symbol">?: </span><a href="_scheduler_services_resourcegroupingservice_d_.resourcelevel.html" class="tsd-signature-type">ResourceLevel</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/hooks/useMonthEvents.d.ts:25</li>
+						<li>Defined in src/scheduler/hooks/useMonthEvents.d.ts:26</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Check if a date has more events than can be displayed</p>
+						<p>Check if a date has more events than can be displayed, optionally filtered by resource</p>
 					</div>
 				</div>
 				<div class="tsd-type-declaration">
@@ -2685,7 +2703,7 @@ img {
 					<ul class="tsd-parameters">
 						<li class="tsd-parameter-siganture">
 							<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property">
-								<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>dateKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+								<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>dateKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, resourceLeaf<span class="tsd-signature-symbol">?: </span><a href="_scheduler_services_resourcegroupingservice_d_.resourcelevel.html" class="tsd-signature-type">ResourceLevel</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 							</ul>
 							<ul class="tsd-descriptions">
 								<li class="tsd-description">
@@ -2693,6 +2711,9 @@ img {
 									<ul class="tsd-parameters">
 										<li>
 											<h5>dateKey: <span class="tsd-signature-type">string</span></h5>
+										</li>
+										<li>
+											<h5><span class="tsd-flag ts-flagOptional">Optional</span> resourceLeaf: <a href="_scheduler_services_resourcegroupingservice_d_.resourcelevel.html" class="tsd-signature-type">ResourceLevel</a></h5>
 										</li>
 									</ul>
 									<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -2708,7 +2729,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">sort<wbr>Events<wbr>ByTime<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>events<span class="tsd-signature-symbol">: </span><a href="_scheduler_types_scheduler_types_d_.eventmodel.html" class="tsd-signature-type">EventModel</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="_scheduler_types_scheduler_types_d_.eventmodel.html" class="tsd-signature-type">EventModel</a><span class="tsd-signature-symbol">[]</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/hooks/useMonthEvents.d.ts:41</li>
+						<li>Defined in src/scheduler/hooks/useMonthEvents.d.ts:42</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">

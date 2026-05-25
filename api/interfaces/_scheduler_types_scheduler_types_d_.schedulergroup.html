@@ -2373,6 +2373,9 @@ img {
 					<a href="_scheduler_types_scheduler_types_d_.schedulergroup.html#bygroupid" class="tsd-kind-icon">by<wbr>GroupID</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
+					<a href="_scheduler_types_scheduler_types_d_.schedulergroup.html#groupedit" class="tsd-kind-icon">group<wbr>Edit</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
 					<a href="_scheduler_types_scheduler_types_d_.schedulergroup.html#resources" class="tsd-kind-icon">resources</a>
 				</li>
 			</ul>
@@ -2384,8 +2387,7 @@ img {
 		<section class="tsd-panel tsd-comment">
 			<div class="tsd-comment tsd-typography">
 				<div class="lead">
-					<p>Configures resource grouping behavior for the scheduler.
-					Enables grouping by resource levels or by date with optional hierarchical support.</p>
+					<p>Grouping configuration</p>
 				</div>
 			</div>
 		</section>
@@ -2406,6 +2408,7 @@ img {
 						<ul class="tsd-index-list">
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_types_scheduler_types_d_.schedulergroup.html#bydate" class="tsd-kind-icon">by<wbr>Date</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_types_scheduler_types_d_.schedulergroup.html#bygroupid" class="tsd-kind-icon">by<wbr>GroupID</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_types_scheduler_types_d_.schedulergroup.html#groupedit" class="tsd-kind-icon">group<wbr>Edit</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_types_scheduler_types_d_.schedulergroup.html#resources" class="tsd-kind-icon">resources</a></li>
 						</ul>
 					</section>
@@ -2420,13 +2423,12 @@ img {
 				<div class="tsd-signature tsd-kind-icon">by<wbr>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:644</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:763</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>When true, render dates under each resource (ResourceHeader BELOW DateHeader).
-						When false (default), render resources under the date header (ResourceHeader ABOVE DateHeader).</p>
+						<p>When true, render dates under each resource (ResourceHeader BELOW DateHeader).</p>
 					</div>
 					<dl class="tsd-comment-tags">
 						<dt>default</dt>
@@ -2441,13 +2443,34 @@ img {
 				<div class="tsd-signature tsd-kind-icon">by<wbr>GroupID<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:651</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:770</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>When true, group child resources by parent groupID field value.
-						Enables hierarchical/parent-child resource relationships based on the <code>groupIDField</code>.</p>
+						<p>When true, group child resources by parent groupID.
+						When false it will form  heirarchy based on the order of resources collection, ignoring groupID values.</p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>default</dt>
+						<dd><p>true</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="groupedit" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> group<wbr>Edit</h3>
+				<div class="tsd-signature tsd-kind-icon">group<wbr>Edit<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:777</li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Allows creation and editing of linked appointments assigned to multiple resources.
+						When set to true, a single appointment object instance will be maintained in schedule dataSource that are created for multiple resources, whereas displayed individually on UI.</p>
 					</div>
 					<dl class="tsd-comment-tags">
 						<dt>default</dt>
@@ -2462,14 +2485,18 @@ img {
 				<div class="tsd-signature tsd-kind-icon">resources<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:637</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:757</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Resource group names to group by, in order (e.g., [&#39;Rooms&#39;,&#39;Owners&#39;]).
-						Each name must correspond to a resource&#39;s <code>name</code> property in the <code>resources</code> array.</p>
+						<p>Resource group names to group by, in order (e.g., [&#39;Rooms&#39;,&#39;Owners&#39;]).</p>
 					</div>
+					<dl class="tsd-comment-tags">
+						<dt>default</dt>
+						<dd><p>[]</p>
+						</dd>
+					</dl>
 				</div>
 			</section>
 		</section>

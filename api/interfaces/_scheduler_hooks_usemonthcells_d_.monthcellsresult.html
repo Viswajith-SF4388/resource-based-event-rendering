@@ -2373,9 +2373,18 @@ img {
 					<a href="_scheduler_hooks_usemonthcells_d_.monthcellsresult.html#handlemoreclick" class="tsd-kind-icon">handle<wbr>More<wbr>Click</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
+					<a href="_scheduler_hooks_usemonthcells_d_.monthcellsresult.html#resourcebydatecells" class="tsd-kind-icon">resource<wbr>ByDate<wbr>Cells</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
+					<a href="_scheduler_hooks_usemonthcells_d_.monthcellsresult.html#resourcecells" class="tsd-kind-icon">resource<wbr>Cells</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
 					<a href="_scheduler_hooks_usemonthcells_d_.monthcellsresult.html#workcells" class="tsd-kind-icon">work<wbr>Cells</a>
 				</li>
 			</ul>
+		</li>
+		<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-private">
+			<a href="_scheduler_hooks_usemonthcells_d_.resourcemonthcells.html" class="tsd-kind-icon">Resource<wbr>Month<wbr>Cells</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-private">
 			<a href="../modules/_scheduler_hooks_usemonthcells_d_.html#usemonthcells" class="tsd-kind-icon">use<wbr>Month<wbr>Cells</a>
@@ -2387,7 +2396,8 @@ img {
 		<section class="tsd-panel tsd-comment">
 			<div class="tsd-comment tsd-typography">
 				<div class="lead">
-					<p>Interface for month work cells hook result</p>
+					<p>Interface for month work cells hook result
+					Supports both grouped (with resources) and non-grouped rendering modes</p>
 				</div>
 			</div>
 		</section>
@@ -2407,6 +2417,8 @@ img {
 						<h3>Properties</h3>
 						<ul class="tsd-index-list">
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_hooks_usemonthcells_d_.monthcellsresult.html#handlemoreclick" class="tsd-kind-icon">handle<wbr>More<wbr>Click</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_hooks_usemonthcells_d_.monthcellsresult.html#resourcebydatecells" class="tsd-kind-icon">resource<wbr>ByDate<wbr>Cells</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_hooks_usemonthcells_d_.monthcellsresult.html#resourcecells" class="tsd-kind-icon">resource<wbr>Cells</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_hooks_usemonthcells_d_.monthcellsresult.html#workcells" class="tsd-kind-icon">work<wbr>Cells</a></li>
 						</ul>
 					</section>
@@ -2421,7 +2433,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">handle<wbr>More<wbr>Click<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>e<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">MouseEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">HTMLElement</span><span class="tsd-signature-symbol">&gt;</span>, date<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/hooks/useMonthCells.d.ts:43</li>
+						<li>Defined in src/scheduler/hooks/useMonthCells.d.ts:90</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2455,17 +2467,49 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-				<a name="workcells" class="tsd-anchor"></a>
-				<h3>work<wbr>Cells</h3>
-				<div class="tsd-signature tsd-kind-icon">work<wbr>Cells<span class="tsd-signature-symbol">:</span> <a href="_scheduler_hooks_usemonthcells_d_.monthcell.html" class="tsd-signature-type">MonthCell</a><span class="tsd-signature-symbol">[]</span></div>
+				<a name="resourcebydatecells" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> resource<wbr>ByDate<wbr>Cells</h3>
+				<div class="tsd-signature tsd-kind-icon">resource<wbr>ByDate<wbr>Cells<span class="tsd-signature-symbol">:</span> <a href="_scheduler_hooks_usemonthcells_d_.monthcell.html" class="tsd-signature-type">MonthCell</a><span class="tsd-signature-symbol">[]</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/hooks/useMonthCells.d.ts:39</li>
+						<li>Defined in src/scheduler/hooks/useMonthCells.d.ts:86</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Processed data for month work cells</p>
+						<p>Flat array of cells organized by date then resource (grouped mode)
+						Used for byDate=true (dates as primary grouping)</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="resourcecells" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> resource<wbr>Cells</h3>
+				<div class="tsd-signature tsd-kind-icon">resource<wbr>Cells<span class="tsd-signature-symbol">:</span> <a href="_scheduler_hooks_usemonthcells_d_.resourcemonthcells.html" class="tsd-signature-type">ResourceMonthCells</a><span class="tsd-signature-symbol">[]</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in src/scheduler/hooks/useMonthCells.d.ts:81</li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Array of resources with their corresponding cells (grouped mode)
+						Used for byDate=false (resources as primary grouping)</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="workcells" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> work<wbr>Cells</h3>
+				<div class="tsd-signature tsd-kind-icon">work<wbr>Cells<span class="tsd-signature-symbol">:</span> <a href="_scheduler_hooks_usemonthcells_d_.monthcell.html" class="tsd-signature-type">MonthCell</a><span class="tsd-signature-symbol">[]</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in src/scheduler/hooks/useMonthCells.d.ts:76</li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Processed data for month work cells (non-grouped mode)</p>
 					</div>
 				</div>
 			</section>

@@ -2376,6 +2376,9 @@ img {
 					<a href="_scheduler_hooks_useworkcells_d_.workcell.html#date-1" class="tsd-kind-icon">date</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
+					<a href="_scheduler_hooks_useworkcells_d_.workcell.html#groupindex-1" class="tsd-kind-icon">group<wbr>Index</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
 					<a href="_scheduler_hooks_useworkcells_d_.workcell.html#isalternate" class="tsd-kind-icon">is<wbr>Alternate</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
@@ -2424,6 +2427,7 @@ img {
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_hooks_useworkcells_d_.workcell.html#classname" class="tsd-kind-icon">class<wbr>Name</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_hooks_useworkcells_d_.workcell.html#dataattributes" class="tsd-kind-icon">data<wbr>Attributes</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_hooks_useworkcells_d_.workcell.html#date-1" class="tsd-kind-icon">date</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_hooks_useworkcells_d_.workcell.html#groupindex-1" class="tsd-kind-icon">group<wbr>Index</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_hooks_useworkcells_d_.workcell.html#isalternate" class="tsd-kind-icon">is<wbr>Alternate</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_hooks_useworkcells_d_.workcell.html#istoday" class="tsd-kind-icon">is<wbr>Today</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_hooks_useworkcells_d_.workcell.html#isweekend" class="tsd-kind-icon">is<wbr>Weekend</a></li>
@@ -2454,7 +2458,7 @@ img {
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 				<a name="dataattributes" class="tsd-anchor"></a>
 				<h3>data<wbr>Attributes</h3>
-				<div class="tsd-signature tsd-kind-icon">data<wbr>Attributes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>date<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>dateKey<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></div>
+				<div class="tsd-signature tsd-kind-icon">data<wbr>Attributes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>date<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>dateKey<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>groupIndex<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></div>
 				<aside class="tsd-sources">
 					<ul>
 						<li>Defined in src/scheduler/hooks/useWorkCells.d.ts:57</li>
@@ -2473,6 +2477,9 @@ img {
 						</li>
 						<li class="tsd-parameter">
 							<h5><span class="tsd-flag ts-flagOptional">Optional</span> date<wbr>Key<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+						</li>
+						<li class="tsd-parameter">
+							<h5><span class="tsd-flag ts-flagOptional">Optional</span> group<wbr>Index<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span></h5>
 						</li>
 					</ul>
 				</div>
@@ -2493,12 +2500,27 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="groupindex-1" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> group<wbr>Index</h3>
+				<div class="tsd-signature tsd-kind-icon">group<wbr>Index<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in src/scheduler/hooks/useWorkCells.d.ts:81</li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Resource group index (sequential position among leaf resources)</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 				<a name="isalternate" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagOptional">Optional</span> is<wbr>Alternate</h3>
 				<div class="tsd-signature tsd-kind-icon">is<wbr>Alternate<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/hooks/useWorkCells.d.ts:76</li>
+						<li>Defined in src/scheduler/hooks/useWorkCells.d.ts:77</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2513,7 +2535,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">is<wbr>Today<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/hooks/useWorkCells.d.ts:68</li>
+						<li>Defined in src/scheduler/hooks/useWorkCells.d.ts:69</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2528,7 +2550,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">is<wbr>Weekend<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/hooks/useWorkCells.d.ts:72</li>
+						<li>Defined in src/scheduler/hooks/useWorkCells.d.ts:73</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2543,7 +2565,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">is<wbr>Work<wbr>Hour<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/hooks/useWorkCells.d.ts:64</li>
+						<li>Defined in src/scheduler/hooks/useWorkCells.d.ts:65</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
