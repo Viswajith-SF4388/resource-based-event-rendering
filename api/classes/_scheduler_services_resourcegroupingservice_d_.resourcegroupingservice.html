@@ -2385,9 +2385,6 @@ img {
 					<a href="_scheduler_services_resourcegroupingservice_d_.resourcegroupingservice.html#generatecolumnlevels" class="tsd-kind-icon">generate<wbr>Column<wbr>Levels</a>
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
-					<a href="_scheduler_services_resourcegroupingservice_d_.resourcegroupingservice.html#generatemonthcolumnlevels" class="tsd-kind-icon">generate<wbr>Month<wbr>Column<wbr>Levels</a>
-				</li>
-				<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
 					<a href="_scheduler_services_resourcegroupingservice_d_.resourcegroupingservice.html#getgroupingmetadata" class="tsd-kind-icon">get<wbr>Grouping<wbr>Metadata</a>
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
@@ -2431,7 +2428,6 @@ img {
 						<ul class="tsd-index-list">
 							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="_scheduler_services_resourcegroupingservice_d_.resourcegroupingservice.html#buildresourcetree" class="tsd-kind-icon">build<wbr>Resource<wbr>Tree</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_scheduler_services_resourcegroupingservice_d_.resourcegroupingservice.html#generatecolumnlevels" class="tsd-kind-icon">generate<wbr>Column<wbr>Levels</a></li>
-							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="_scheduler_services_resourcegroupingservice_d_.resourcegroupingservice.html#generatemonthcolumnlevels" class="tsd-kind-icon">generate<wbr>Month<wbr>Column<wbr>Levels</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="_scheduler_services_resourcegroupingservice_d_.resourcegroupingservice.html#getgroupingmetadata" class="tsd-kind-icon">get<wbr>Grouping<wbr>Metadata</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="_scheduler_services_resourcegroupingservice_d_.resourcegroupingservice.html#getleafresources" class="tsd-kind-icon">get<wbr>Leaf<wbr>Resources</a></li>
 						</ul>
@@ -2539,19 +2535,21 @@ img {
 				<a name="generatecolumnlevels" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagStatic">Static</span> generate<wbr>Column<wbr>Levels</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-					<li class="tsd-signature tsd-kind-icon">generate<wbr>Column<wbr>Levels<span class="tsd-signature-symbol">(</span>resourceTree<span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_services_resourcegroupingservice_d_.resourcelevel.html" class="tsd-signature-type">ResourceLevel</a><span class="tsd-signature-symbol">[]</span>, groupConfig<span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.schedulergroup.html" class="tsd-signature-type">SchedulerGroup</a>, defaultDates<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">[]</span>, leafResources<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_scheduler_services_resourcegroupingservice_d_.resourcelevel.html" class="tsd-signature-type">ResourceLevel</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_internal_interface_d_.tddata.html" class="tsd-signature-type">TdData</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span></li>
+					<li class="tsd-signature tsd-kind-icon">generate<wbr>Column<wbr>Levels<span class="tsd-signature-symbol">(</span>resourceTree<span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_services_resourcegroupingservice_d_.resourcelevel.html" class="tsd-signature-type">ResourceLevel</a><span class="tsd-signature-symbol">[]</span>, groupConfig<span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.schedulergroup.html" class="tsd-signature-type">SchedulerGroup</a>, slots<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_scheduler_types_internal_interface_d_.tddata.html" class="tsd-signature-type">TdData</a><span class="tsd-signature-symbol">[]</span>, leafResources<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_scheduler_services_resourcegroupingservice_d_.resourcelevel.html" class="tsd-signature-type">ResourceLevel</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_internal_interface_d_.tddata.html" class="tsd-signature-type">TdData</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/scheduler/services/ResourceGroupingService.d.ts:116</li>
+								<li>Defined in src/scheduler/services/ResourceGroupingService.d.ts:118</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
 							<div class="lead">
-								<p>Generates column levels for rendering.
-								This creates the header structure based on the resource tree.</p>
+								<p>Generates column levels for rendering with unified slot handling.
+									This is a unified method supporting both date-based (Day/Week views) and weekday-based (Month view) layouts.
+									Slot format is auto-detected: slots with &#39;weekdayIndex&#39; are treated as weekday headers,
+								Date objects or TdData with &#39;date&#39; property are treated as date headers.</p>
 							</div>
 						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2569,9 +2567,9 @@ img {
 								</div>
 							</li>
 							<li>
-								<h5>defaultDates: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">[]</span></h5>
+								<h5>slots: <span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_scheduler_types_internal_interface_d_.tddata.html" class="tsd-signature-type">TdData</a><span class="tsd-signature-symbol">[]</span></h5>
 								<div class="tsd-comment tsd-typography">
-									<p>Global render dates</p>
+									<p>Generic slot data (Date objects OR weekday slots with TdData)</p>
 								</div>
 							</li>
 							<li>
@@ -2580,56 +2578,6 @@ img {
 						</ul>
 						<h4 class="tsd-returns-title">Returns <a href="../interfaces/_scheduler_types_internal_interface_d_.tddata.html" class="tsd-signature-type">TdData</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span></h4>
 						<p>Hierarchical column level structure for rendering</p>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
-				<a name="generatemonthcolumnlevels" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> generate<wbr>Month<wbr>Column<wbr>Levels</h3>
-				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
-					<li class="tsd-signature tsd-kind-icon">generate<wbr>Month<wbr>Column<wbr>Levels<span class="tsd-signature-symbol">(</span>resourceTree<span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_services_resourcegroupingservice_d_.resourcelevel.html" class="tsd-signature-type">ResourceLevel</a><span class="tsd-signature-symbol">[]</span>, groupConfig<span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_scheduler_types_d_.schedulergroup.html" class="tsd-signature-type">SchedulerGroup</a>, weekdaySlots<span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_internal_interface_d_.tddata.html" class="tsd-signature-type">TdData</a><span class="tsd-signature-symbol">[]</span>, leafResources<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_scheduler_services_resourcegroupingservice_d_.resourcelevel.html" class="tsd-signature-type">ResourceLevel</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_scheduler_types_internal_interface_d_.tddata.html" class="tsd-signature-type">TdData</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in src/scheduler/services/ResourceGroupingService.d.ts:128</li>
-							</ul>
-						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Generates column levels specifically for Month view with resource grouping.</p>
-							</div>
-						</div>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>resourceTree: <a href="../interfaces/_scheduler_services_resourcegroupingservice_d_.resourcelevel.html" class="tsd-signature-type">ResourceLevel</a><span class="tsd-signature-symbol">[]</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>Root resource tree</p>
-								</div>
-							</li>
-							<li>
-								<h5>groupConfig: <a href="../interfaces/_scheduler_types_scheduler_types_d_.schedulergroup.html" class="tsd-signature-type">SchedulerGroup</a></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>Grouping configuration</p>
-								</div>
-							</li>
-							<li>
-								<h5>weekdaySlots: <a href="../interfaces/_scheduler_types_internal_interface_d_.tddata.html" class="tsd-signature-type">TdData</a><span class="tsd-signature-symbol">[]</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>Precomputed weekday cells (7 or fewer if workDaysOnly)</p>
-								</div>
-							</li>
-							<li>
-								<h5><span class="tsd-flag ts-flagOptional">Optional</span> leafResources: <a href="../interfaces/_scheduler_services_resourcegroupingservice_d_.resourcelevel.html" class="tsd-signature-type">ResourceLevel</a><span class="tsd-signature-symbol">[]</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>Optional pre-calculated leaf resources (avoids recalculation)</p>
-								</div>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <a href="../interfaces/_scheduler_types_internal_interface_d_.tddata.html" class="tsd-signature-type">TdData</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span></h4>
-						<p>Hierarchical column level structure for Month view rendering</p>
 					</li>
 				</ul>
 			</section>

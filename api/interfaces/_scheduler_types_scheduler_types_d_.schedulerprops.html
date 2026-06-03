@@ -2535,6 +2535,12 @@ img {
 					<a href="_scheduler_types_scheduler_types_d_.schedulerprops.html#timescale" class="tsd-kind-icon">time<wbr>Scale</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
+					<a href="_scheduler_types_scheduler_types_d_.schedulerprops.html#timezone" class="tsd-kind-icon">timezone</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
+					<a href="_scheduler_types_scheduler_types_d_.schedulerprops.html#timezonedatasource" class="tsd-kind-icon">timezone<wbr>Data<wbr>Source</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
 					<a href="_scheduler_types_scheduler_types_d_.schedulerprops.html#view" class="tsd-kind-icon">view</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
@@ -2654,6 +2660,8 @@ img {
 							<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_scheduler_types_scheduler_types_d_.schedulerprops.html#tabindex" class="tsd-kind-icon">tab<wbr>Index</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_scheduler_types_scheduler_types_d_.schedulerprops.html#timeformat" class="tsd-kind-icon">time<wbr>Format</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_scheduler_types_scheduler_types_d_.schedulerprops.html#timescale" class="tsd-kind-icon">time<wbr>Scale</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_types_scheduler_types_d_.schedulerprops.html#timezone" class="tsd-kind-icon">timezone</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_types_scheduler_types_d_.schedulerprops.html#timezonedatasource" class="tsd-kind-icon">timezone<wbr>Data<wbr>Source</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_types_scheduler_types_d_.schedulerprops.html#view" class="tsd-kind-icon">view</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_types_scheduler_types_d_.schedulerprops.html#weekrule" class="tsd-kind-icon">week<wbr>Rule</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_types_scheduler_types_d_.schedulerprops.html#width" class="tsd-kind-icon">width</a></li>
@@ -4228,6 +4236,52 @@ img {
 					<dl class="tsd-comment-tags">
 						<dt>default</dt>
 						<dd><p>{ enable: true, interval: 60, slotCount: 2, majorSlot: null, minorSlot: null }</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="timezone" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> timezone</h3>
+				<div class="tsd-signature tsd-kind-icon">timezone<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:474</li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Assigns a specific IANA timezone used to render and interpret all scheduler dates and events.
+							When provided, event date-times (for example, UTC timestamps or values with offsets) are displayed
+							and treated in this timezone so that event times remain consistent across different client systems.
+							This is recommended for schedulers bound to remote or shared data sources to avoid client-local
+							timezone shifts affecting displayed times.
+						Accepts standard IANA timezone identifiers (for example, &#39;America/New_York&#39;).</p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>default</dt>
+						<dd><p>timezoneData (uses client system timezone)</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="timezonedatasource" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> timezone<wbr>Data<wbr>Source</h3>
+				<div class="tsd-signature tsd-kind-icon">timezone<wbr>Data<wbr>Source<span class="tsd-signature-symbol">:</span> <a href="_scheduler_types_scheduler_types_d_.timezonefields.html" class="tsd-signature-type">TimezoneFields</a><span class="tsd-signature-symbol">[]</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:481</li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Optional list of timezones to display in the editor timezone selector.
+						Each item includes a display text and timezone value (e.g., <code>[{ text: &#39;Eastern&#39;, value: &#39;America/New_York&#39; }]</code>).</p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>default</dt>
+						<dd><p>timezoneData (timezone dataSource)</p>
 						</dd>
 					</dl>
 				</div>

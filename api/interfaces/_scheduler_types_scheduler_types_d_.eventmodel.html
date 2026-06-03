@@ -2373,6 +2373,9 @@ img {
 					<a href="_scheduler_types_scheduler_types_d_.eventmodel.html#endtime" class="tsd-kind-icon">end<wbr>Time</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
+					<a href="_scheduler_types_scheduler_types_d_.eventmodel.html#endtimezone" class="tsd-kind-icon">end<wbr>Timezone</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
 					<a href="_scheduler_types_scheduler_types_d_.eventmodel.html#followingid" class="tsd-kind-icon">following<wbr>Id</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
@@ -2401,6 +2404,9 @@ img {
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
 					<a href="_scheduler_types_scheduler_types_d_.eventmodel.html#starttime" class="tsd-kind-icon">start<wbr>Time</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
+					<a href="_scheduler_types_scheduler_types_d_.eventmodel.html#starttimezone" class="tsd-kind-icon">start<wbr>Timezone</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
 					<a href="_scheduler_types_scheduler_types_d_.eventmodel.html#subject" class="tsd-kind-icon">subject</a>
@@ -2447,6 +2453,7 @@ img {
 						<ul class="tsd-index-list">
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_types_scheduler_types_d_.eventmodel.html#description" class="tsd-kind-icon">description</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_types_scheduler_types_d_.eventmodel.html#endtime" class="tsd-kind-icon">end<wbr>Time</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_types_scheduler_types_d_.eventmodel.html#endtimezone" class="tsd-kind-icon">end<wbr>Timezone</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_types_scheduler_types_d_.eventmodel.html#followingid" class="tsd-kind-icon">following<wbr>Id</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_types_scheduler_types_d_.eventmodel.html#id" class="tsd-kind-icon">id</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_types_scheduler_types_d_.eventmodel.html#isallday" class="tsd-kind-icon">is<wbr>All<wbr>Day</a></li>
@@ -2457,6 +2464,7 @@ img {
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_types_scheduler_types_d_.eventmodel.html#recurrenceid" class="tsd-kind-icon">recurrenceID</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_types_scheduler_types_d_.eventmodel.html#recurrencerule" class="tsd-kind-icon">recurrence<wbr>Rule</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_types_scheduler_types_d_.eventmodel.html#starttime" class="tsd-kind-icon">start<wbr>Time</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_types_scheduler_types_d_.eventmodel.html#starttimezone" class="tsd-kind-icon">start<wbr>Timezone</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scheduler_types_scheduler_types_d_.eventmodel.html#subject" class="tsd-kind-icon">subject</a></li>
 						</ul>
 					</section>
@@ -2471,7 +2479,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1081</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1094</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2487,7 +2495,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">end<wbr>Time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Date</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1066</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1079</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2498,12 +2506,36 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="endtimezone" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> end<wbr>Timezone</h3>
+				<div class="tsd-signature tsd-kind-icon">end<wbr>Timezone<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1146</li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>The IANA timezone identifier for the event end (for example, &#39;America/New_York&#39;).
+							When provided, the scheduler treats <code>endTime</code> as occurring in that timezone and
+							converts it to the user&#39;s/local timezone for display, sorting, and duration calculations.
+							Format: IANA TZ database name (e.g. &#39;Europe/London&#39;, &#39;America/Los_Angeles&#39;).
+						Example: <code>{ endTime: new Date(&#39;2026-05-15T10:00:00&#39;), endTimezone: &#39;America/New_York&#39; }</code></p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>default</dt>
+						<dd><p>undefined</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 				<a name="followingid" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagOptional">Optional</span> following<wbr>Id</h3>
 				<div class="tsd-signature tsd-kind-icon">following<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1113</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1126</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2521,7 +2553,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1051</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1064</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2537,7 +2569,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">is<wbr>All<wbr>Day<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1071</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1084</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2553,7 +2585,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">is<wbr>Block<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1091</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1104</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2569,7 +2601,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">is<wbr>Readonly<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1086</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1099</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2585,7 +2617,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">location<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1076</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1089</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2601,7 +2633,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">recurrence<wbr>Exception<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1106</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1119</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2617,7 +2649,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">recurrenceID<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1101</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1114</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2633,7 +2665,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">recurrence<wbr>Rule<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1096</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1109</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2649,7 +2681,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">start<wbr>Time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Date</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1061</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1074</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2660,12 +2692,36 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="starttimezone" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> start<wbr>Timezone</h3>
+				<div class="tsd-signature tsd-kind-icon">start<wbr>Timezone<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1136</li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>The IANA timezone identifier for the event start (for example, &#39;America/New_York&#39;).
+							When provided, the scheduler treats <code>startTime</code> as occurring in that timezone and
+							converts it to the user&#39;s/local timezone for display, sorting, and duration calculations.
+							Format: IANA TZ database name (e.g. &#39;Europe/London&#39;, &#39;America/Los_Angeles&#39;).
+						Example: <code>{ startTime: new Date(&#39;2026-05-15T09:00:00&#39;), startTimezone: &#39;America/New_York&#39; }</code></p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>default</dt>
+						<dd><p>undefined</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 				<a name="subject" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagOptional">Optional</span> subject</h3>
 				<div class="tsd-signature tsd-kind-icon">subject<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1056</li>
+						<li>Defined in src/scheduler/types/scheduler-types.d.ts:1069</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
